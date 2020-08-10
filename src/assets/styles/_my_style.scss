@@ -1,0 +1,22 @@
+@import "mixins.scss";
+@import "TheHeader.scss";
+@import "TheSidenav.scss";
+@import "Bonus.scss";
+@import "my_resume_item.scss";
+@import "theme.scss";
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+ }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    
+    /* padding-top: 3.5rem; */
+    height: 100%;
+  }

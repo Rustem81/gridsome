@@ -1,0 +1,13 @@
+section.resume-section:first-child{
+    min-height: calc(100vh - #{$header_height}); 
+    padding-top: $header_height;
+    margin: 0cm 2em 0cm 2em;
+
+    
+}
+section.resume-section{
+    min-height: 100vh;
+    padding-top: $header_height;
+    margin: 0cm 2em 0cm 2em;
+    
+}

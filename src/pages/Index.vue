@@ -1,33 +1,30 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <b-container  class="flex-column mt-3">
+      <div>
+         <ul v-for="edge in $static.allTipeAuto.edges" :key="edge.node.id">
+          <li><g-link :to=edge.node.path>{{edge.node.tipe}}</g-link> </li> 
+        </ul> 
+      </div>
+ </b-container>
   </Layout>
 </template>
 
-<script>
-export default {
-  metaInfo: {
-    title: 'Hello, world!'
+<static-query>
+query{
+  allTipeAuto{
+    edges{
+      node{
+        path,
+        EnTipeLower,
+        tipe,
+        ImgTipe
+      }
+    }
   }
 }
-</script>
+</static-query>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
+
+
+

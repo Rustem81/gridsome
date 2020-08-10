@@ -1,0 +1,69 @@
+.header-container {
+    height: $header_height;
+    
+  }
+  
+  .the-header {
+    width: 100%;
+    position: fixed;
+    height: $header_height;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  
+  
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  .navigation-items {
+    display: none;
+  }
+  
+  @media (min-width: 1170px) {
+    .navigation-items {
+      display: block;
+    }
+  }
+  
+  .nav-list {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .nav-item>button{
+    cursor: pointer;
+    padding: 0.5em;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-bottom-color: transparent;
+    border-style: none;
+    outline: none;
+    color: #bfdbbf;
+  }
+
+  .nav-item>button:hover,
+  .nav-item>button:active
+  {
+    cursor: pointer;
+        color: $white;
+  }
+
+
+  
+  

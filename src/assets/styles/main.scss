@@ -1,0 +1,11 @@
+@import "variables.scss";
+//
+ @import "mixins.scss";
+
+ @import 'node_modules/bootstrap/scss/bootstrap';
+ @import 'node_modules/bootstrap-vue/src/index.scss';
+ @import "my_style.scss"
+
+
+// @import "resume-item.scss";
+// @import "bootstrap-overrides.scss";

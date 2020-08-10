@@ -10,7 +10,12 @@
     "bootstrap": "^4.5.1",
     "bootstrap-vue": "^2.16.0",
     "gridsome": "^0.7.0",
+    "gridsome-source-google-sheets-v2": "^1.0.1",
     "gridsome-source-mysql": "^1.5.4",
     "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3"
   }
 }
